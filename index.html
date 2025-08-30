@@ -55,15 +55,8 @@
           </select>
         </div>
 
-        <div class="col-6 col-md-3 d-flex align-items-center gap-2">
-          <div class="form-check mt-4">
-            <input class="form-check-input" type="checkbox" id="soloActivas" v-model="filtros.onlyActive">
-            <label class="form-check-label" for="soloActivas">Solo disponibles (Estado=true)</label>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-9 text-end">
-          <button class="btn btn-primary mt-3" @click="buscarServidor">Buscar en API</button>
+        <div class="col-12 col-md-7 text-end">
+          <button class="btn btn-primary mt-3" @click="buscarServidor">Buscar</button>
         </div>
       </div>
 
