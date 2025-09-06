@@ -1,0 +1,20 @@
+{
+  "name": "proyect_cinema",
+  "version": "1.0.0",
+  "description": "Cartelera — Frontend (Vue 3 + Bootstrap 5)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joss220r/proyect_cinema.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joss220r/proyect_cinema/issues"
+  },
+  "homepage": "https://github.com/Joss220r/proyect_cinema#readme"
+}

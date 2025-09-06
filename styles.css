@@ -1,110 +1,129 @@
 /* ===== Paleta lila ===== */
-:root{
-  --p-900:#503459; /* fondo base */
-  --p-700:#81638b; /* primario fuerte */
-  --p-500:#b695c0; /* acento/hover */
-  --p-300:#dac9df; /* superficies claras */
-  --p-100:#ffffff; /* blanco */
+:root {
+  --p-900: #503459; /* fondo base */
+  --p-700: #81638b; /* primario fuerte */
+  --p-500: #b695c0; /* acento/hover */
+  --p-300: #dac9df; /* superficies claras */
+  --p-100: #ffffff; /* blanco */
 }
 
 /* ===== Tema ===== */
-body{
+body {
   background: linear-gradient(180deg, var(--p-900) 0%, var(--p-700) 100%);
   color: var(--p-100);
 }
-.navbar{
+.navbar {
   background: var(--p-900) !important;
-  border-bottom: 1px solid rgba(255,255,255,.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
-.navbar-brand{ letter-spacing:.5px }
+.navbar-brand {
+  letter-spacing: 0.5px;
+}
 
-.card{
+.card {
   background: var(--p-700);
   border: 1px solid var(--p-500);
   color: var(--p-100);
-  transition: transform .15s, border-color .15s, box-shadow .15s;
+  transition:
+    transform 0.15s,
+    border-color 0.15s,
+    box-shadow 0.15s;
   position: relative;
   z-index: 1; /* <- para que nunca tape al select */
 }
-.card:hover{
+.card:hover {
   transform: translateY(-2px);
   border-color: var(--p-300);
-  box-shadow: 0 6px 18px rgba(0,0,0,.18);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
 }
 
-.form-control, .form-select{
-  background: rgba(255,255,255,.08);
+.form-control,
+.form-select {
+  background: rgba(255, 255, 255, 0.08);
   color: var(--p-100);
   border-color: var(--p-300);
 }
-.form-control::placeholder{ color: rgba(255,255,255,.65) }
-.form-check-input{
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+.form-check-input {
   background: var(--p-300);
   border-color: var(--p-500);
 }
-.badge-soft{
+.badge-soft {
   background: var(--p-300);
   color: var(--p-900);
   border: 1px solid var(--p-500);
 }
 
-.btn-primary{
+.btn-primary {
   background: var(--p-700);
   border-color: var(--p-700);
   color: var(--p-100);
 }
 .btn-primary:hover,
-.btn-primary:focus{
+.btn-primary:focus {
   background: var(--p-500);
   border-color: var(--p-500);
   color: var(--p-900);
 }
-.btn-outline-light{
+.btn-outline-light {
   color: var(--p-100);
   border-color: var(--p-300);
 }
-.btn-outline-light:hover{
+.btn-outline-light:hover {
   background: var(--p-300);
   color: var(--p-900);
   border-color: var(--p-300);
 }
 
-.text-muted{ color: rgba(255,255,255,.75) !important }
+.text-muted {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
 
-.pagination .page-link{
-  background: rgba(255,255,255,.06);
+.pagination .page-link {
+  background: rgba(255, 255, 255, 0.06);
   border-color: var(--p-500);
   color: var(--p-100);
 }
-.pagination .page-link:hover{
+.pagination .page-link:hover {
   background: var(--p-500);
   color: var(--p-900);
   border-color: var(--p-500);
 }
-.pagination .page-item.disabled .page-link{
-  opacity:.6;
-  background: rgba(255,255,255,.05);
+.pagination .page-item.disabled .page-link {
+  opacity: 0.6;
+  background: rgba(255, 255, 255, 0.05);
 }
 
-.modal-content{
+.modal-content {
   background: var(--p-700);
   color: var(--p-100);
   border: 1px solid var(--p-500);
 }
-.pointer{ cursor:pointer }
+.pointer {
+  cursor: pointer;
+}
 
 /* ===== FIX visual del SELECT ===== */
 /* 1) Barra de filtros por encima de las cards */
-.filters-bar{ position: relative; z-index: 30; }
+.filters-bar {
+  position: relative;
+  z-index: 30;
+}
 
 /* 2) Forzamos colores del popup de opciones */
 .form-select option,
-.form-select optgroup{
+.form-select optgroup {
   background-color: var(--p-700);
   color: var(--p-100);
 }
 
 /* 3) Compatibilidad de apariencia para navegadores WebKit/Gecko */
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
-  .form-select{ -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+  .form-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
 }
